@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    height: auto;
+}
+
+input {
+    outline: none;
+    border: solid 1px #6565f5;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100%;
+}
+
+main {
+    justify-content: center;
+    margin-left: 250px;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+/*Tela (Inicio)*/
+#menu-sidebar {
+    display: none;
+}
+
+.meu-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -30px;
+    height: auto !important;
+    left: 0;
+    z-index: 3 !important;
+}
+
+.main-painel {
+    margin: 0 !important;
+    z-index: 2 !important;
+    height: auto;
+    width: auto;
+    align-items: flex-start !important;
+}
+.main-painel-row{
+    width: 110%;
+    height: 100%;
+    justify-content: center;
+}
+.painel-encarte {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 99%;
+    border: solid 0.2px black;
+}
+
+#header-main {
+    height: 150px;
+    background-color: rgb(216, 245, 216);
+}
+
+#header-main label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header-main label:hover {
+    background-color: rgb(165, 176, 165);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#header-main img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+#header-main img:hover {
+    opacity: 70%;
+}
+
+#header-main .icone-header {
+    width: 7%;
+}
+
+.body-encarte {
+    height: 500px;
+    width: 480px;
+    background-color: white;
+}
+
+#view-encarte {
+    flex-wrap: wrap;
+}
+#footer-main {
+    background-color: rgb(241, 241, 241);
+    height: auto;
+}
+
+#footer-area-1,
+#footer-area-2 {
+    padding-left: 4px;
+    overflow: hidden;
+}
+#ajusteCor{
+    margin-top: 10px;
+    border-radius: 10px 0;
+    box-shadow: 4px 4px 1px rgb(110, 137, 148);
+}
+.formFooter {
+    background-color: #0c63e4;
+    text-align: center;
+    color: white;
+    border-radius: 9.3px 0;
+    overflow: hidden;
+}
+
+.removeBox,
+.addBox {
+    width: 50px;
+    padding-top: 130px !important;
+}
+
+.removeBox img,
+.addBox img {
+    transition: 0.2s !important;
+}
+
+.removeBox img:hover,
+.addBox img:hover {
+    border-radius: 10px;
+    transform: scale(1.1);
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+/*Tela (final)*/
+
+.rodape-icon {
+    flex: 0 0 auto !important;
+    width: 25% !important;
+}
+
+
+.display-encarte {
+    box-shadow: 0 0 2px 0.5px #000;
+    background-color: rgb(216, 245, 216);
+    height: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.display-encarte-new {
+    flex-direction: column-reverse !important;
+    justify-content: flex-end;
+    align-items: end;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.display-encarte:hover {
+    background-color: rgb(165, 176, 165);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.display-encarte img {
+    width: 20%;
+}
+
+#encarte-main {
+    height: auto;
+    min-width: 25% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#valorEnc {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 70%;
+    margin-bottom: -20px;
+}
+
+.logo-preco {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 100%;
+    height: 60px;
+}
+
+.texto-preco {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.logo-preco h6 {
+    margin-bottom: 0;
+}
+
+#nomeProduto {
+    width: 100%;
+    padding-left: 5px;
+    margin-bottom: -35px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.title-fam {
+    font-family: 'Berkshire Swash', serif !important;
+}
+
+/*Inicio Acordion*/
+
+.accordion-header button {
+    transition: 0.2s;
+}
+
+.accordion-header button:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: rgb(208, 208, 208) !important;
+}
+
+.accordion-item3 {
+    background-color: rgb(244, 244, 244);
+    border: solid 2px blue !important;
+}
+
+/*Final Acordion*/
+
+/*MODAL*/
+h6>.modal-title {
+    font-family: 'Berkshire Swash', serif;
+}
+
+input[type="color"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    appearance: none;
+    padding: 0;
+    border: solid 1px black;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.btnZz {
+    transition: 0.2s;
+}
+
+.btnZz:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+@media(max-width: 845px) {
+    main {
+        margin: 0;
+    }
+
+    .mostrar-sidebar {
+        display: block !important;
+    }
+
+    #menu-sidebar {
+        display: block !important;
+    }
+
+    .container {
+        max-width: none;
+    }
+
+    .meu-sidebar {
+        display: none;
+        right: 0;
+        width: 100% !important;
+        height: auto !important;
+        margin: auto;
+        margin-top: -10px;
+        font-size: 1.5rem !important;
+    }
+
+    .rodape-icon {
+        width: 14% !important;
+        min-width: 58px !important;
+    }
+    .painel-encarte{
+        margin-top: 30px;
+    }
+    .body-encarte {
+        min-height: initial;
+        height: 480px;
+        max-height: none;
+    }
+}
+
+@media(max-width: 611px) {
+    #header-main {
+        height: 120px;
+    }
+
+    .body-encarte {
+        width: 400px;
+        height: 420px;
+    }
+    .texto-preco{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 512px) {
+    #header-main {
+        height: 120px;
+    }
+
+    .body-encarte {
+        width: 350px;
+        height: 390px;
+    }
+
+    .addBox,
+    .removeBox {
+        padding: 100px 0 0 0 !important;
+        width: 30px !important;
+    }
+
+    .display-encarte-new {
+        padding-bottom: 10px;
+    }
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 450px) {
+    #header-main {
+        height: 100px;
+    }
+
+    .body-encarte {
+        width: 290px;
+        height: 300px;
+    }
+
+    .addBox,
+    .removeBox {
+        padding: 60px 0 0 0 !important;
+        width: 30px !important;
+    }
+}
+
+@media(max-width: 370px) {
+    #header-main {
+        height: 95px;
+    }
+
+    .body-encarte {
+        width: 240px;
+        height: 245px;
+    }
+
+    .addBox,
+    .removeBox {
+        padding: 50px 0 0 0 !important;
+        width: 25px !important;
+    }
+
+    .meu-sidebar {
+        font-size: 1.0rem !important;
+    }
+}
+
+@media(max-width: 310px) {
+    #header-main {
+        height: 80px;
+    }
+
+    .body-encarte {
+        width: 200px;
+        height: 200px;
+    }
+
+    .addBox,
+    .removeBox {
+        padding: 50px 0 0 0 !important;
+        width: 20px !important;
+    }
+    .logo-preco{
+        line-height: 10px;
+    }
+}
