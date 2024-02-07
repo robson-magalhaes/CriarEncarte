@@ -154,7 +154,6 @@ main {
 
 
 .display-encarte {
-    box-shadow: 0 0 2px 0.5px #000;
     background-color: rgb(216, 245, 216);
     height: 100%;
     min-height: auto;
@@ -164,6 +163,9 @@ main {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border: dashed 2px rgb(169, 167, 167);
+    border-radius: 7px;
+    margin: 1px;
 }
 
 .display-encarte-new {
@@ -172,6 +174,7 @@ main {
     align-items: end;
     padding-bottom: 10px;
     margin-bottom: 25px;
+    border:none;
 }
 
 .display-encarte:hover {
@@ -286,7 +289,9 @@ input[type="color"]::-webkit-color-swatch {
     transition: 0.2s;
     transform: scale(1.1);
 }
-
+.show{
+    display: block;
+}
 @media(max-width: 845px) {
     main {
         margin: 0;
