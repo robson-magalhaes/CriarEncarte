@@ -1,5 +1,5 @@
 # Criação de Encarte
- Aplicação desenvolvida de forma simples, utilizando apenas com HTML, CSS, JavaScript, e uso do html2canvas para print do display, com funcionalidades de personalização e responsividade do layout e do encarte, para que seja melhor aproveitado pelo usuario.
+ Aplicação desenvolvida de forma simples, utilizando apenas HTML, CSS, JavaScript, e uso do html2canvas para print do display, com funcionalidades de personalização e responsividade do layout e do encarte, para que seja melhor aproveitado pelo usuario.
  
  ## Personalização
  
